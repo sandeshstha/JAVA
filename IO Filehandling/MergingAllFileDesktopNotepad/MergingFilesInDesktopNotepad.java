@@ -3,7 +3,7 @@ import java.io.*;
 class MergingFilesInDesktopNotepad
 {
 	public static void main(String[] args) throws IOException
-	{
+	{ 
 		PrintWriter pw = new PrintWriter("output.txt");
 		File file = new File("C:\\Users\\user\\Desktop\\notepad"); //saves a file object in file
 		File[] fileList = file.listFiles();
