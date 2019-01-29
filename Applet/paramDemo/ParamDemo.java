@@ -16,7 +16,7 @@ public class ParamDemo extends Applet
 		}
 
 		param = getParameter("fontSize");
-
+ 
 		try
 		{
 			if(param != null)
