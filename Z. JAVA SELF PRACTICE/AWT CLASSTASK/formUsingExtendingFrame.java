@@ -1,3 +1,4 @@
+// class task using Frame
 import java.awt.*;
 
 class formUsingExtendingFrame extends Frame 

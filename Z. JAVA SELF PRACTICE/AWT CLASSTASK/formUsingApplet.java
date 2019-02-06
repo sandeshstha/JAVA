@@ -1,3 +1,4 @@
+// classtask using applet
 import java.awt.*;
 import java.applet.*;
 
