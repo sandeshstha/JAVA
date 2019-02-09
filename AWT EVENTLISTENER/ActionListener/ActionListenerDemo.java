@@ -15,15 +15,15 @@ public class ActionListenerDemo extends Applet implements ActionListener
 	Button button;
 	public void init()
 	{	
+		this.setSize(200,200);
+		this.setLayout(new FlowLayout());
+		this.setVisible(true);
+
 		outputTextArea = new TextArea();
 		button = new Button("Click to see result");
 
 		// registering the listener
 		button.addActionListener(this);
-
-		this.setSize(200,200);
-		this.setLayout(new FlowLayout());
-		this.setVisible(true);
 		
 		this.add(outputTextArea);
 		this.add(button);
