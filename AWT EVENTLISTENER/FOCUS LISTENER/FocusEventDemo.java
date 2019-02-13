@@ -15,7 +15,7 @@ public class FocusEventDemo extends Frame
 		this.setSize(500,500);
 		this.setTitle("Focus Listener demo");
 // for closing the frame
-		addWindowListener(new WindowAdapter()
+		this.addWindowListener(new WindowAdapter()
 		{
 			public void windowClosing(WindowEvent we)
 			{

@@ -24,7 +24,7 @@ public class ActionListenerByAnonymousInnerClass extends Frame //no need to impl
 		this.add(btnDecrement);
 		this.add(btnReset);
 
-				// Construct an anonymous instance of an anonymous inner class.
+				// Construct an anonymous instance(object chai haina banaune coz) of an anonymous inner class.
       			// The source Button adds the anonymous instance as ActionEvent listener
 			btnIncrement.addActionListener(new ActionListener(){
 			@Override
