@@ -16,14 +16,13 @@ class BorderLayoutDemo extends Frame
 		btnCenter = new Button("Center");
 
 
-		add("LDSKJF",btnNorth);
-		add("SOUTH",btnSouth);
+	
 		
-		// add(btnNorth,BorderLayout.NORTH);
-		// add(btnSouth,BorderLayout.SOUTH);
-		// add(btnEast,BorderLayout.EAST);
-		// add(btnWest,BorderLayout.WEST);
-		// add(btnCenter,BorderLayout.CENTER);
+		add(btnNorth,BorderLayout.NORTH);
+		add(btnSouth,BorderLayout.SOUTH);
+		add(btnEast,BorderLayout.EAST);
+		add(btnWest,BorderLayout.WEST);
+		add(btnCenter,BorderLayout.CENTER);
 
 	}
 	public static void main(String[] args) {

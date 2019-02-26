@@ -7,13 +7,25 @@ class DisplayNames
 	{
 		System.out.println("the names of the all the files and the directories present in the Desktop are:");
 		File fileObject = new File("C:\\Users\\user\\Desktop"); //desktop samma ko lai fileObject bhanne file object ma rakhxa
-		String[] namesArray = fileObject.list();
+		File[] namesArray = fileObject.listFiles();
 
-		for(int i =0; i<namesArray.length; i++)
-		{
-			String name = namesArray[i];
-			System.out.println(name); 
-		}
+		
+			System.out.println("the names of the directories is desktop are:");
+			for(int i = 0;i<namesArray.length;i++)
+			{
+				if(namesArray[i].isDirectory())
+				{
+				
+				System.out.println(namesArray[i].getName());
+				}
+			}
+		
+
+		// for(int i =0; i<namesArray.length; i++)
+		// {
+		// 	String name = namesArray[i];
+		// 	System.out.println(name); 
+		// }
 		
 	}
 }

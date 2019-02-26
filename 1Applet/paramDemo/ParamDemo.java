@@ -1,5 +1,9 @@
 import java.awt.*;
 import java.applet.*;
+/*<applet code="ParamDemo" alt="cannot run java program" width="300" height="300" align="left">
+		<param name="fontName" value="Arial">
+		<p>parameter passed</p>
+	</applet>*/
 public class ParamDemo extends Applet
 {
 	String fontName;

@@ -12,7 +12,7 @@ public class AWTGraphicsDemo extends Frame {
    }
 
   public void paint(Graphics g) {
-      g.setColor(Color.GRAY);
+      g.setColor(Color.RED);
       Font font = new Font("Serif", Font.PLAIN, 24);
       g.setFont(font);
       g.drawString("Welcome to mero world ", 50, 150);  

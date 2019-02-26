@@ -2,6 +2,10 @@
 import java.awt.*;
 import java.applet.*;
 
+	/*<applet code="DisplayImage" alt="cannot run java program" width="300" height="300" align="left">
+		
+
+	</applet>*/
 public class DisplayImage extends Applet
 {
 	Image picture;
