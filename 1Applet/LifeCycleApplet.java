@@ -4,8 +4,7 @@ import java.awt.*;
 	
 	</applet>*/
 public class LifeCycleApplet extends Applet
-{
-	
+{	
 	public void init()
 	{
 		System.out.println("applet initialized");
