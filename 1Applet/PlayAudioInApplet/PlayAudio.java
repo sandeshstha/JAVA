@@ -4,6 +4,7 @@ import java.applet.*;
 
 /*
 	<applet code = "PlayAudio" height = "500" width = "500">
+		<param name = "audioname" value="sound.wav">
 	</applet>
 */
 	public class PlayAudio extends Applet implements ActionListener
@@ -12,7 +13,9 @@ import java.applet.*;
 		Button play, stop,loop;
 		public void init()
 		{
-			acRef = getAudioClip(getDocumentBase(),"sound.wav");
+			String audioName = getParameter("audioname");
+
+			acRef = getAudioClip(getDocumentBase(),audioName);
 			play = new Button("PLAY");
 			stop = new Button("STOP");
 			loop = new Button("REPEAT");
@@ -28,7 +31,7 @@ import java.applet.*;
 		}
 		public void actionPerformed(ActionEvent e)
 		{
-			if(e.getSource()==play)
+			if(e.getSource()==play) //returns Button Reference
 			{
 				acRef.play();
 			}
