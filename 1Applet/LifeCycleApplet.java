@@ -13,7 +13,7 @@ public class LifeCycleApplet extends Applet
 	{
 		System.out.println("applet started");
 		
-	}
+	} 
 	public void paint(Graphics g)
 	{
 		

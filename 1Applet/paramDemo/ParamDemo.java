@@ -1,82 +1,46 @@
 import java.awt.*;
 import java.applet.*;
-/*<applet code="ParamDemo" alt="cannot run java program" width="300" height="300" align="left">
-		<param name="fontName" value="Arial">
-		<p>parameter passed</p>
-	</applet>*/
-public class ParamDemo extends Applet
-{
-	String fontName;
-	int fontSize;
-	float leading;
-	boolean active;
-	public void start()
+/*
+	<applet code = "ParamDemo" width = "100" height = "100" align= "center">
+	<param name="fontName" value = "Arial">
+	<param name="fontSize" value = "14">
+	</applet>
+*/
+	public class ParamDemo extends Applet 
 	{
-		String param;
-		fontName = getParameter("fontName");
-		if(fontName == null)
+		String fN;
+		int fS;
+		@Override
+		public void init()
 		{
-			fontName = "not found";
-		}
+			String param;
 
-		param = getParameter("fontSize");
- 
-		try
-		{
-			if(param != null)
+			fN = getParameter("fontName");
+			if(fN == null)
 			{
-				fontSize = Integer.parseInt(param);
+				fN = "not found";
 			}
-			else
-			{
-				fontSize =0;
-			}
-		}
-		catch(NumberFormatException e)
-		{
-			fontSize = -1;
-		}
-
-		param = getParameter("leading");
-		{
 			try
 			{
-				if(param != null)
+
+				param = getParameter("fontSize");
+				if(param!=null)
 				{
-					leading = Float.valueOf(param).floatValue();
+					fS = Integer.parseInt(param);
 				}
 				else
-					leading = 0;
+				{
+					fS = 10;
+				}
 			}
 			catch(NumberFormatException e)
 			{
-				leading = -1;
+				System.out.println(e);
 			}
 		}
-		
-		// param = getParameter("accountEnabled");
-		// 	try
-		// 	{
-		// 		if(param != null)
-		// 		{
-		// 			active = Boolean.valueOf(param).booleanValue();
-		// 		}
-		// 		else
-		// 			active = 0;
-		// 	}
-		// 	catch(NumberFormatException e)
-		// 	{
-		// 		active = -1;
-		// 	}
-	}
-
 		public void paint(Graphics g)
 		{
-			g.drawString("Font name:"+fontName,100,100);
-			g.drawString("Font size:"+fontSize,100,100);
-			// g.drawString("leading:"+fontName,100,100);
-			// g.drawString("Font name:"+fontName,100,100);
-
+			g.drawString("fontname is:"+fN,200,200);
+			g.drawString("fontSize is:"+fS,240,240);
 		}
-
-}
+	}
